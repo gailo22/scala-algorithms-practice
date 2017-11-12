@@ -9,5 +9,6 @@ lazy val root = (project in file(".")).
     )),
     name := "Hello",
     libraryDependencies += scalaTest % Test,
+    libraryDependencies += "org.typelevel" %% "cats-core" % "1.0.0-RC1",
     mainClass in assembly := Some("example.Hello")
   )
